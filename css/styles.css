@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Aleo', serif;
+  font-size: 1em; /* 16px */
+  line-height: 1.5;
+  color: #3a3a3a;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Lato', sans-serif;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 1.6em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 1em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+
+h3 {
+  font-size: 1.3em;
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+  color: #093a58;
+}
+
+address {
+  font-style: normal;
+}
+
+.main-header {
+  padding-top: 1em;
+  margin-bottom: 3em;
+}
+
+.name {
+  margin-bottom: 1em;
+}
+
+.main-nav ul {
+  margin-bottom: 2.2em;
+}
+
+.main-nav ul li {
+  /* list-style: none; */
+  background-color: white;
+  margin-bottom: .3em;
+}
+
+nav ul li a {
+  padding: .5em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+
+.main-nav ul li a {
+  display: block;
+}
+
+.main-nav ul li a:hover {
+  background-color: #4A4A4A;
+  color: #FAFAFA;
+}
+
+.avatar {
+  max-width: 60%;
+}
+
+.introduction {
+  padding-bottom: 2em;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.alt-color {
+  background-color: rgba(249, 249, 249, 1);
+}
+
+.portfolio-header {
+  margin-bottom: 3em;
+}
+
+.project {
+  margin-bottom: 2em;
+}
+
+.project-image {
+  max-width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.project-header {
+  margin-bottom: .5em;
+}
+
+.project-description {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.projects-div {
+  margin-bottom: 2em;
+}
+
+.skills-div {
+  border-top: 1px solid #DCDCDC;
+  padding-top: 3em;
+}
+
+.skills-header {
+  margin-bottom: 3em;
+}
+
+.skills-ul {
+  /* baka kelangan margin bot or padding bot sa skillsdiv na lang */
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.skills-ul li {
+  color: white;
+  background-color: rgba(45, 45, 45 , 1);
+  margin-bottom: .3em;
+  padding: 1em;
+  box-shadow: 3px 2px 3px #cdcdcd;
+}
+
+.skills-ul li:hover {
+  background-color: rgba(66, 66, 66 , 1);
+}
+
+main {
+  padding-bottom: 4em;
+}
+
+.name,
+.main-nav ul li,
+.banner,
+.introduction,
+.portfolio-header,
+.skills-header,
+.skills-ul,
+.project,
+.main-footer
+{
+  text-align: center;
+}
+
+.main-footer {
+  padding-top: 3em;
+}
+
+.contact-header {
+  margin-bottom: 2em;
+}
+
+.remarks {
+  margin-bottom: 2em;
+}
+
+address {
+  margin-bottom: 4em;
+}
+
+address span {
+  margin-left: .5em;
+  font-weight: bold;
+  color: #9b9c9c;
+}
+
+address span a {
+  color: #9b9c9c;
+}
+
+address span a:hover {
+  border-bottom: 2px solid #626F7E;
+  color: #626F7E;
+}
+
+.credit {
+  border-top: 1px solid #DCDCDC;
+  font-size: .8em;
+  font-weight: bold;;
+  padding: .5em 1em 1em;
+}
+
+.credit p {
+  float: left;
+  color: #9b9c9c;
+}
+
+.credit p + p {
+  float: right;
+  text-transform: uppercase;
+}
+
+.credit p a {
+  color: inherit;
+  padding: .5em;
+  transition: all 0.5s;
+}
+
+.credit p a:hover {
+  background-color: #5E5E5E;
+  color: #FAFAFA;
+}
+
+.footer-nav {
+  display: none;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* =================================
+Media Queries
+==================================== */
+
+/*** TABLET STYLES ***/
+@media (min-width: 768px) {
+
+  .main-header {
+    padding-top: 3em
+  }
+
+  .main-nav {
+    text-align: center;
+  }
+
+  .main-nav ul {
+    display: inline-block;
+  }
+
+  .main-nav ul li{
+    float: left;
+    background-color: transparent;
+  }
+
+  .main-nav ul li a {
+    padding: 1em 1.5em;
+  }
+
+  .avatar {
+    float: right;
+    width: 35%;
+    padding-bottom: 3em;
+  }
+
+  .introduction {
+    float: left;
+    width: 65%;
+    text-align: left;
+    font-size: 1.125em;
+    margin-top: 0;
+    padding-right: 1em;
+  }
+
+  .project {
+    float: left;
+    width: 50%;
+    padding: .5em;
+    margin-bottom: 2em;
+  }
+
+  .project p {
+    /* keep height of this element consistent */
+    height: 3.75em;
+  }
+
+  .skills-ul li {
+    display: inline-block;
+    width: 49%;
+  }
+
+  .remarks {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5em;
+  }
+
+  .credit p a {
+    display: none;
+  }
+
+  .footer-nav {
+    display: block;
+    text-align: right;
+  }
+
+  .footer-nav ul {
+    display: inline-block;
+  }
+
+  .footer-nav ul li {
+    float: left;
+  }
+
+  .footer-nav ul li a {
+    display: inline-block;
+    padding: 1em 1.5em;
+    color: #9b9c9c;
+  }
+
+  .footer-nav ul li a:hover {
+    background-color: #9b9c9c;
+    color: #FAFAFA;
+  }
+
+  .credit {
+    padding-bottom: 2em;
+  }
+
+}
+/*** DESKTOP STYLES ***/
+@media (min-width: 1024px) {
+
+  .name {
+    float: left;
+    padding-top: .8rem;
+  }
+
+  .main-nav {
+    float: right;
+  }
+
+  .introduction {
+    width: 60%;
+    font-size: 1.3em;
+    line-height: 1.7;
+  }
+
+  .avatar {
+    width: 40%;
+  }
+
+  .project {
+    width: 33.33%;
+  }
+
+  .skills-ul li {
+    width: 24%;
+  }
+
+}
